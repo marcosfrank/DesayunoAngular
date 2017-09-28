@@ -7,5 +7,14 @@ import { RouterOutlet } from "@angular/router";
   styleUrls: ['./app.component.css']
 })
 export class RootComponent {
-  title: string = 'Marcos';
+  title: string = 'Angular Application';
+  fansQuantity: number = 2500;
+  
+  fansQuantityString() : string {
+    return this.title + " has " + this.fansQuantity + " Fans";
+  }
+
+  addFan() : void {
+    this.fansQuantity++;
+  }
 }

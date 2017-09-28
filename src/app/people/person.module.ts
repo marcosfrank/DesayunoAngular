@@ -25,6 +25,9 @@ import { PersonsService } from './person.service';
   providers: [
     PersonsService
     //ProductGuardService
+  ],
+  exports: [
+    PersonListComponent
   ]
 })
 export class PersonModule { }

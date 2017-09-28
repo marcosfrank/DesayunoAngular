@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
 import { RootComponent } from './app.component';
+import { PersonModule } from './people/person.module';
+
 
 @NgModule({
   declarations: [
@@ -9,9 +14,9 @@ import { RootComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    FormsModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [RootComponent]
 })
 export class AppModule { }

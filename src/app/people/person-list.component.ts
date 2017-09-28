@@ -4,8 +4,8 @@ import { IPerson } from './person';
 import { PersonsService } from './person.service';
 
 @Component({
-    templateUrl: './person-list.component.html',
-    styleUrls: []
+    selector: 'vp-persons',
+    templateUrl: './person-list.component.html'
 })
 export class PersonListComponent implements OnInit {
     pageTitle: string = 'People List';
