@@ -13,8 +13,6 @@ export class RootComponent {
   fansQuantityString() : string {
     return this.title + " has " + this.fansQuantity + " Fans";
   }
+	// Agregar Funcion aca
 
-  addFan() : void {
-    this.fansQuantity++;
-  }
 }
