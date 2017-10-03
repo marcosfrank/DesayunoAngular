@@ -19,16 +19,16 @@ export class PersonMoodComponent implements OnInit, OnChanges {
     setImageUrl(): void{
         switch(this.moodLevel){
             case -1:
-                this.imageUrl = './images/triste.jpg';
+                this.imageUrl = 'assets/images/pv-person-mood/triste.jpg';
                 break;
             case 0:
-                this.imageUrl = './images/neutral.jpg';
+                this.imageUrl = 'assets/images/pv-person-mood/neutral.jpg';
                 break;
             case 1:
-                this.imageUrl = './images/feliz.jpg';
+                this.imageUrl = 'assets/images/pv-person-mood/feliz.jpg';
                 break;
             default:
-                this.imageUrl = './images/question.jpg';
+                this.imageUrl = 'assets/images/pv-person-mood/question.jpg';
                 break;
         }
     }
